@@ -11,4 +11,6 @@ const Users = async () => {
   return <UsersList users={users} />
 }
 
+export const dynamic = "force-dynamic"
+
 export default Users
