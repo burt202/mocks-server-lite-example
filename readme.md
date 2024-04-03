@@ -1,5 +1,7 @@
 # Mocks Server Lite Example
 
+This example repo shows how you can use [mocks-server-lite](https://github.com/burt202/mocks-server-lite) to help create a mock backend to aide with local development and E2E test runs. This example uses [NextJS](https://nextjs.org/) and [Playwright](https://playwright.dev/)
+
 ### To Install
 
 - `npm ci`
