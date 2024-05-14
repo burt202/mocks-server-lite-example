@@ -2,6 +2,7 @@ import {createServer} from "mocks-server-lite"
 
 import collections from "./collections"
 import routes from "./routes"
+import staticPaths from "./staticPaths"
 import webSockets from "./webSockets"
 
 const server = createServer({
@@ -10,4 +11,4 @@ const server = createServer({
   port: 3101,
 })
 
-void server.start({routes, collections, webSockets})
+void server.start({routes, collections, webSockets, staticPaths})
