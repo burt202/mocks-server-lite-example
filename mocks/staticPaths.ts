@@ -1,10 +1,10 @@
 import {StaticPathOptions} from "mocks-server-lite"
 
-const webSockets: Array<StaticPathOptions> = [
+const staticPaths: Array<StaticPathOptions> = [
   {
     from: __dirname + "/static",
     to: "/assets",
   },
 ]
 
-export default webSockets
+export default staticPaths
