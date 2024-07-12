@@ -18,4 +18,14 @@ export default defineConfig({
       use: {...devices["Desktop Chrome"]},
     },
   ],
+  webServer: [
+    {
+      command: "npm run mocks",
+      url: "http://localhost:3101",
+    },
+    {
+      command: "npm run start",
+      url: "http://localhost:3000",
+    },
+  ],
 })
