@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+env:
+  APP_URL: http://localhost:3000
+  NEXT_PUBLIC_API_URL: http://localhost:3101
+  NEXT_PUBLIC_CHAT_SOCKET_URL: ws://localhost:3101/chat
+
 jobs:
   ci:
     runs-on: ubuntu-latest
