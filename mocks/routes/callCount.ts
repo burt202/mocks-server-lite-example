@@ -8,9 +8,9 @@ const route: Route = {
     {
       id: "success",
       type: "handler",
-      response: (_, res, {callCount}) => {
+      response: (_, res, {previous}) => {
         res.status(200)
-        res.send({callCount})
+        res.send({callCount: previous.length + 1})
       },
     },
   ],
