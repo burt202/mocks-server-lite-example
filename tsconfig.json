@@ -1,24 +1,27 @@
 {
   "compilerOptions": {
-    "target": "es2020",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
+    "target": "es2022",
+    "lib": ["es2022", "dom"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noErrorTruncation": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    // react settings
+    "jsx": "preserve",
+    // nextjs settings
     "noEmit": true,
     "incremental": true,
-    "esModuleInterop": true,
-    "module": "nodenext",
-    "resolveJsonModule": true,
-    "jsx": "preserve",
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "allowJs": true,
+    "skipLibCheck": true,
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "moduleResolution": "nodenext",
-    "isolatedModules": true
+    ]
   },
   "include": [
     "next-env.d.ts",

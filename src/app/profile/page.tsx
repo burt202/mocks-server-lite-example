@@ -13,8 +13,11 @@ const Profile = () => {
       <input
         type="file"
         onChange={(e) => {
+          const files = e.target.files
+          if (!files) return
+
           const formData = new FormData()
-          formData.append("file", e.target.files[0])
+          formData.append("file", files[0])
 
           fetch(`${config.apiUrl}/api/profile`, {
             method: "POST",

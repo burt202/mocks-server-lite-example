@@ -10,10 +10,10 @@ const configSchema = z.object({
 
 export type Config = z.infer<typeof configSchema>
 
-export const config: Config = {
+export const config = {
   apiUrl,
   chatSocketUrl,
-}
+} as Config
 
 export function validateConfig() {
   configSchema.parse(config)
