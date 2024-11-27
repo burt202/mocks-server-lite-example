@@ -1,4 +1,4 @@
-import {Collection} from "mocks-server-lite"
+import {type Collection} from "mocks-server-lite"
 
 const collections: Array<Collection> = [
   {

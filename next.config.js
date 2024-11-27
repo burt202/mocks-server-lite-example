@@ -2,6 +2,9 @@
 
 module.exports = {
   distDir: "dist",
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     remotePatterns: [
       {

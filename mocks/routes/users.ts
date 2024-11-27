@@ -1,4 +1,4 @@
-import {Route, RouteVariantHandler} from "mocks-server-lite"
+import {type Route, type RouteVariantHandler} from "mocks-server-lite"
 
 import {User} from "../../src/types"
 

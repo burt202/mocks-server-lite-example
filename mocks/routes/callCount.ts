@@ -1,4 +1,4 @@
-import {Route} from "mocks-server-lite"
+import {type Route} from "mocks-server-lite"
 
 const route: Route = {
   id: "get-call-count",

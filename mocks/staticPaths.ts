@@ -1,4 +1,4 @@
-import {StaticPathOptions} from "mocks-server-lite"
+import {type StaticPathOptions} from "mocks-server-lite"
 
 const staticPaths: Array<StaticPathOptions> = [
   {

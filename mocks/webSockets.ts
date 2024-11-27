@@ -1,4 +1,4 @@
-import {WebSocketHandler} from "mocks-server-lite"
+import {type WebSocketHandler} from "mocks-server-lite"
 
 const chat: WebSocketHandler = {
   id: "chat",

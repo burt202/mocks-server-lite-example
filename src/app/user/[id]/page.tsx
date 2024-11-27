@@ -1,7 +1,9 @@
 import {config} from "../../../config"
 import {User} from "../../../types"
 
-const UserPage = async ({params}: {params: {id: string}}) => {
+const UserPage = async (props: {params: Promise<{id: string}>}) => {
+  const params = await props.params
+
   const res = await fetch(`${config.apiUrl}/api/user/${params.id}`, {
     cache: "no-store",
   })

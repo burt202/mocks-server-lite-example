@@ -1,6 +1,6 @@
-import {Route} from "mocks-server-lite"
+import {type Route} from "mocks-server-lite"
 
-import {SuccessResponse, ErrorResponse} from "../../src/types"
+import {ErrorResponse, SuccessResponse} from "../../src/types"
 
 const SUCCESS: SuccessResponse = {result: "Ok!"}
 const ERROR: ErrorResponse = {error: "Invalid credentials"}

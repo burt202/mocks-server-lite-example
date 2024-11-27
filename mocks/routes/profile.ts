@@ -1,5 +1,5 @@
 import {mkdirSync} from "fs"
-import {Route} from "mocks-server-lite"
+import {type Route} from "mocks-server-lite"
 import multer from "multer"
 import path from "path"
 
@@ -10,11 +10,11 @@ const SUCCESS: SuccessResponse = {result: "Uploaded!"}
 const UPLOAD_PATH = path.join(__dirname, "../uploads")
 
 const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
+  destination(req, file, cb) {
     mkdirSync(UPLOAD_PATH, {recursive: true})
     cb(null, UPLOAD_PATH)
   },
-  filename: function (req, file, cb) {
+  filename(req, file, cb) {
     cb(null, Date.now() + "-" + file.originalname)
   },
 })
