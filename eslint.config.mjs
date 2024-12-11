@@ -16,11 +16,6 @@ export default [
     ],
   },
   {
-    plugins: {
-      react: pluginReact,
-      "react-hooks": pluginReactHooks,
-      "simple-import-sort": simpleImportSort,
-    },
     languageOptions: {
       parser: tsEslint.parser,
       ecmaVersion: 2023,
@@ -41,6 +36,11 @@ export default [
   ...tsEslint.configs.recommendedTypeChecked,
   importPlugin.flatConfigs.recommended,
   {
+    plugins: {
+      react: pluginReact,
+      "react-hooks": pluginReactHooks,
+      "simple-import-sort": simpleImportSort,
+    },
     rules: {
       ...pluginReact.configs.flat.recommended.rules,
       ...pluginReactHooks.configs.recommended.rules,
