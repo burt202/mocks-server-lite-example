@@ -11,3 +11,16 @@ export const setMockCollection = async (name: string) => {
     }),
   })
 }
+
+export const sendWebSocketMessage = async <T>(id: string, message: T) => {
+  await fetch(`${API_URL}/__send-ws-message`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      id,
+      message,
+    }),
+  })
+}
