@@ -9,6 +9,7 @@ env:
   APP_URL: http://localhost:3000
   NEXT_PUBLIC_API_URL: http://localhost:3101
   NEXT_PUBLIC_CHAT_SOCKET_URL: ws://localhost:3101/chat
+  MSL_SKIP_SELECTION_PROMPT: true
 
 jobs:
   ci:
