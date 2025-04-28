@@ -10,6 +10,7 @@ export default [
   {
     ignores: [
       "dist/",
+      "playwright-report/",
       "next.config.js",
       "postcss.config.js",
       "eslint.config.mjs",

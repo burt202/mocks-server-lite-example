@@ -20,7 +20,7 @@ export default defineConfig({
   ],
   webServer: [
     {
-      command: "npm run mocks",
+      command: "MSL_SKIP_SELECTION_PROMPT=true npm run mocks",
       url: "http://localhost:3101",
     },
     {

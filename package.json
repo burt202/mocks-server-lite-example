@@ -14,31 +14,31 @@
     "start": "next start"
   },
   "dependencies": {
-    "mocks-server-lite": "^0.12.0",
+    "mocks-server-lite": "^0.12.1",
     "next": "^15.1.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "zod": "^3.24.1"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^3.24.3"
   },
   "devDependencies": {
-    "@playwright/test": "^1.49.1",
+    "@playwright/test": "^1.52.0",
     "@types/multer": "^1.4.12",
-    "@types/node": "^22.10.2",
-    "@types/react": "^18.3.16",
-    "@types/react-dom": "^18.3.5",
-    "autoprefixer": "^10.4.20",
-    "dotenv": "^16.4.7",
-    "eslint": "^9.16.0",
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "autoprefixer": "^10.4.21",
+    "dotenv": "^16.5.0",
+    "eslint": "^9.25.1",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "husky": "^9.1.7",
     "multer": "^1.4.5-lts.1",
-    "postcss": "^8.4.49",
-    "prettier": "^3.4.2",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2",
-    "typescript-eslint": "^8.18.0"
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1"
   }
 }
