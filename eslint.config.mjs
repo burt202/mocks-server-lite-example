@@ -11,9 +11,10 @@ export default [
     ignores: [
       "dist/",
       "playwright-report/",
-      "next.config.js",
-      "postcss.config.js",
       "eslint.config.mjs",
+      "next.config.js",
+      "postcss.config.mjs",
+      "prettier.config.mjs",
     ],
   },
   {
