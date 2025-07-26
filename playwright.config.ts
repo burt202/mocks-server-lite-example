@@ -1,7 +1,7 @@
 import {defineConfig, devices} from "@playwright/test"
 import dotenv from "dotenv"
 
-dotenv.config()
+dotenv.config({quiet: true})
 
 export const API_URL = process.env.NEXT_PUBLIC_API_URL
 
