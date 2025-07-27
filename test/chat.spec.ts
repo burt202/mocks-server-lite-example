@@ -16,4 +16,18 @@ test("chat websocket", async ({page}) => {
 
   await expect(socketResponses).toContainText("Received: Triggered message")
   expect(await socketResponses.locator("p").all()).toHaveLength(2)
+
+  await setMockCollection("login-error")
+
+  await page.reload()
+
+  const socketResponsesAfterCollectionChange =
+    page.getByTestId("socket-responses")
+
+  await expect(socketResponsesAfterCollectionChange).toContainText(
+    "Received: Login error collection!",
+  )
+  expect(
+    await socketResponsesAfterCollectionChange.locator("p").all(),
+  ).toHaveLength(1)
 })
