@@ -15,6 +15,7 @@ export default [
       "next.config.js",
       "postcss.config.mjs",
       "prettier.config.mjs",
+      "next-env.d.ts",
     ],
   },
   {
