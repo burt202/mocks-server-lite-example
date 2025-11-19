@@ -39,7 +39,7 @@ const Home = () => {
               }
             })
             .catch(() => {
-              console.log("Error")
+              console.error("Error")
             })
         }}
       >

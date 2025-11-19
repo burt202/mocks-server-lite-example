@@ -30,7 +30,7 @@ const UsersList = (props: UsersListProps) => {
               setUsers(res)
             })
             .catch(() => {
-              console.log("Error")
+              console.error("Error")
             })
         }}
       >
@@ -67,7 +67,7 @@ const UsersList = (props: UsersListProps) => {
                 setUsers([...users, res])
               })
               .catch(() => {
-                console.log("Error")
+                console.error("Error")
               })
           }}
         >

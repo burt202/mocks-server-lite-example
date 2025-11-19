@@ -47,7 +47,9 @@ export default [
     rules: {
       ...pluginReact.configs.flat.recommended.rules,
       ...pluginReactHooks.configs.recommended.rules,
+      complexity: ["error", {max: 10}],
       eqeqeq: "error",
+      "no-console": ["warn", {allow: ["info", "warn", "error"]}],
       "object-shorthand": "error",
       "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": [

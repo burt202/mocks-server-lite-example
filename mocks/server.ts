@@ -20,5 +20,5 @@ void createServer(
     void server.start()
   })
   .catch(() => {
-    console.log("There was an error starting the server")
+    console.error("There was an error starting the server")
   })

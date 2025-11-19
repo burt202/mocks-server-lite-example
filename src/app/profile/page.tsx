@@ -28,7 +28,7 @@ const Profile = () => {
               setResponse(res.result)
             })
             .catch(() => {
-              console.log("Error")
+              console.error("Error")
             })
         }}
       />

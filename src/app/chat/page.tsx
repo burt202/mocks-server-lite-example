@@ -14,6 +14,7 @@ function Chat() {
 
   useEffect(() => {
     if (message) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setMessages((prev) => [...prev, message.message])
     }
   }, [message])
