@@ -3,7 +3,7 @@ import {type Route, type RouteVariantHandler} from "mocks-server-lite"
 import {USERS} from "./users"
 
 const dynamicParam: RouteVariantHandler<{id: string}> = {
-  id: "dynamic-param",
+  id: "success",
   type: "handler",
   response: (req, res) => {
     const user = USERS.find((u) => {

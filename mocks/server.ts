@@ -14,6 +14,7 @@ void createServer(
     selected: process.env.SELECTED_MOCKS_COLLECTION ?? "base",
     port: 3101,
     skipSelectionPrompt,
+    defaultRouteVariantName: "success",
   },
 )
   .then((server) => {
