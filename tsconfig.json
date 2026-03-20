@@ -9,7 +9,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     // react settings
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     // nextjs settings
     "noEmit": true,
     "incremental": true,
@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "dist/types/**/*.ts"
+    "dist/types/**/*.ts",
+    "dist/dev/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
